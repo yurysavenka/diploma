@@ -1,1 +1,79 @@
-/*# sourceMappingURL=ourteam.css.map */
+.our-team-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin: 114px 0;
+}
+.our-team-container .our-team-subcontainer {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.our-team-container .our-team-subcontainer .person-card {
+  width: 270px;
+  height: 619px;
+}
+.our-team-container .our-team-subcontainer .person-card .person-card__photo {
+  width: 100%;
+  height: 270px;
+}
+.our-team-container .our-team-subcontainer .person-card .person-card__name {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: 100%;
+  color: #2D3033;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 30px;
+}
+.our-team-container .our-team-subcontainer .person-card .person-card__post {
+  display: flex;
+  align-items: center;
+  height: 21px;
+  width: 100%;
+  color: #FF4343;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: 5.29px;
+}
+.our-team-container .our-team-subcontainer .person-card .person-card__text {
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #6C7279;
+  margin-top: 17.86px;
+}
+.our-team-container .our-team-subcontainer .person-card .person-card__links {
+  display: flex;
+  margin-top: 37.86px;
+}
+.our-team-container .our-team-subcontainer .person-card img:nth-of-type(2) {
+  margin: 0 5px;
+}
+.our-team-container .our-team-subcontainer .person-card:nth-of-type(1),
+.our-team-container .our-team-subcontainer .person-card:nth-of-type(2),
+.our-team-container .our-team-subcontainer .person-card:nth-of-type(3) {
+  margin-right: 30px;
+}
+.our-team-container .our-team-subcontainer .person-card1 .person-card__photo {
+  background-image: url(./images/our_team/worker1.png);
+}
+.our-team-container .our-team-subcontainer .person-card2 .person-card__photo {
+  background-image: url(./images/our_team/worker2.png);
+}
+.our-team-container .our-team-subcontainer .person-card3 .person-card__photo {
+  background-image: url(./images/our_team/worker3.png);
+}
+.our-team-container .our-team-subcontainer .person-card4 .person-card__photo {
+  background-image: url(./images/our_team/worker4.png);
+}/*# sourceMappingURL=ourteam.css.map */

@@ -1,0 +1,47 @@
+.download-container {
+    @include size($full 224px);
+    display: flex;
+    @include flexable($flex-center $flex-center);
+    margin-bottom: 114px;
+
+    .download-subcontainer {
+        width: 1170px;
+        margin: $center;
+
+        .download__head {
+            color: $black;
+            @include size($full 70px);
+            font-weight: 500;
+            @include font(30px 35px);
+            display: flex;
+            @include flexable($flex-center $flex-center);
+            text-align: $flex-center;
+
+        }
+
+        .download__text {
+            margin-top: 5.29px;
+            @include size($full 21px);
+            font-weight: 700;
+            @include font(18px 21px);
+            display: flex;
+            @include flexable($flex-center $flex-center);
+            text-align: $flex-center;
+            text-transform: uppercase;
+            color: $black;
+        }
+
+        .download-button {
+            @include size(369px 77.58px);
+            background: #FF4343;
+            font-weight: 900;
+            @include font(24px 28px);
+            margin: 47.71px auto 0;
+            display: flex;
+            @include flexable($flex-center $flex-center);
+            text-align: $flex-center;
+            text-transform: uppercase;
+            color: $white;
+        }
+    }
+}

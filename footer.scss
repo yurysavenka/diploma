@@ -1,0 +1,99 @@
+.footer-container {
+    @include size($full 341px);
+
+    .footer-subcontainer {
+        background: #353C65;
+        display: flex;
+        @include flexable($flex-center flex-start);
+        padding-top: 71.14px;
+        height: 250px;
+
+        .location {
+            @include size(370px 71px);
+
+            .location__head {
+                color: $white;
+                font-weight: 700;
+                @include font(18px 21px);
+                display: flex;
+                @include flexable($flex-center $flex-center);
+                text-align: $flex-center;
+                text-transform: uppercase;
+            }
+
+            .location__text {
+                color: $white;
+                @include font(18px 21px);
+                display: flex;
+                @include flexable($flex-center $flex-center);
+                text-align: $flex-center;
+                margin-top: 29px;
+            }
+        }
+
+        .social {
+            @include size(370px 108.86px);
+
+            .social__head {
+                color: $white;
+                font-weight: 700;
+                @include font(18px 21px);
+                display: flex;
+                @include flexable($flex-center $flex-center);
+                text-align: $flex-center;
+                text-transform: uppercase;
+            }
+
+            .social__picture-container {
+                display: flex;
+                @include flexable($flex-center $flex-center);
+                margin-top: 48.86px;
+
+                img:nth-of-type(2) {
+                    margin: 0 27px;
+                }
+            }
+        }
+
+        .about {
+            @include size(370px 112.71px);
+
+            .about__head {
+                color: $white;
+                font-weight: 700;
+                @include font(18px 21px);
+                display: flex;
+                @include flexable($flex-center $flex-center);
+                text-align: $flex-center;
+                text-transform: uppercase;
+            }
+
+            .about__text {
+                margin-top: 28.71px;
+                color: $white;
+                @include font(18px 21px);
+                display: flex;
+                @include flexable($flex-center $flex-center);
+                text-align: $flex-center;
+            }
+        }
+    }
+
+    .footer-copyright {
+        height: 90px;
+        background: #2C3154;
+        display: flex;
+        @include flexable($flex-center $flex-center);
+        text-align: $flex-center;
+
+        h5 {
+            font-weight: 400;
+            @include size(370px 42px);
+            @include font(18px 21px);
+            display: flex;
+            @include flexable($flex-center $flex-center);
+            text-align: $flex-center;
+            color: #808080;
+        }
+    }
+}

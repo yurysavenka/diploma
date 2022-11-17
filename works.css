@@ -1,1 +1,87 @@
-/*# sourceMappingURL=works.css.map */
+.work-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-top: 133.57px;
+}
+.work-container .work-subcontainer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  width: 1170px;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 378px);
+  grid-template-rows: repeat 2, 340px;
+}
+.work-container .work-subcontainer .work {
+  border: 2px solid #FFFFFF;
+  height: 340px;
+  width: 378px;
+}
+.work-container .work-subcontainer .work .work-grid-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.work-container .work-subcontainer .work .work-grid-container .work-grid-subcontainer {
+  height: 81px;
+  width: 100%;
+}
+.work-container .work-subcontainer .work .work-grid-container .work-grid-subcontainer .work__header,
+.work-container .work-subcontainer .work .work-grid-container .work-grid-subcontainer .work__text {
+  display: none;
+}
+.work-container .work-subcontainer .work1 {
+  background-image: url(images/grid/work_1.png);
+}
+.work-container .work-subcontainer .work2 {
+  background-image: url(images/grid/work_2.png);
+}
+.work-container .work-subcontainer .work3 {
+  background-image: url(images/grid/work_3.png);
+}
+.work-container .work-subcontainer .work4 {
+  background-image: url(images/grid/work_4.png);
+}
+.work-container .work-subcontainer .work5 {
+  background-image: url(images/grid/work_5.png);
+}
+.work-container .work-subcontainer .work6 {
+  background-image: url(images/grid/work_6.png);
+}
+.work-container .work-subcontainer .work7 {
+  background-image: url(images/grid/work_7.png);
+}
+.work-container .work-subcontainer .work8 {
+  background-image: url(images/grid/work_8.png);
+}
+.work-container .work-subcontainer .work:hover .work-grid-container {
+  background: rgba(255, 67, 67, 0.8);
+}
+.work-container .work-subcontainer .work:hover .work-grid-container .work-grid-subcontainer .work__header {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 21px;
+}
+.work-container .work-subcontainer .work:hover .work-grid-container .work-grid-subcontainer .work__text {
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}/*# sourceMappingURL=works.css.map */

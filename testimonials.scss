@@ -1,0 +1,68 @@
+.testmonials-container {
+    @include size($full 100vh);
+    display: flex;
+    @include flexable($flex-center $flex-center);
+    margin-bottom: 114px;
+
+    .testmonials-subcontainer {
+        @include size(1511px 535px);
+        margin: $center;
+
+        .testmonials-carousel {
+
+            display: flex;
+
+            .testmonials-carousel__photo {
+                background-image: url(./images/bg.png);
+                @include size(741px 490px);
+            }
+
+            .testmonials-carousel__signature {
+                background: #5C3249;
+                @include size(770px 490px);
+
+                .signature__header {
+                    font-family: 'Cardo', sans-serif;
+                    font-style: italic;
+                    font-weight: 400;
+                    display: flex;
+                    align-items: $flex-center;
+                    @include font(36px 49px);
+                    color: $white;
+                    @include size(471px 230px);
+                    margin: 116px 0 0 130px;
+                }
+
+                .signature__text {
+                    font-weight: 700;
+                    @include font(13px 15px);
+                    display: flex;
+                    align-items: $flex-center;
+                    color: $white;
+                    @include size(470px 28px);
+                    margin-left: 130px;
+                }
+            }
+        }
+
+        .testmonials-dots {
+            display: flex;
+            @include flexable(space-between $flex-center);
+            margin: 31px auto 0;
+            width: 170px;
+
+            .testmonials-dots__active {
+                background: $dark-pink;
+                @include size(14px 14px);
+                @include bordered(1px $dark-pink);
+                border-radius: $circle;
+            }
+
+            .testmonials-dots__normal {
+                @include size(14px 14px);
+                @include bordered(1px $dark-pink);
+                border-radius: $circle;
+            }
+        }
+    }
+}

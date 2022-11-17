@@ -1,0 +1,18 @@
+@mixin flexable($flex-x, $flex-y) {
+    justify-content: $flex-x;
+    align-items: $flex-y;
+}
+
+@mixin bordered($width, $color) {
+    border: $width solid $color;
+}
+
+@mixin size($size-x, $size-y) {
+    width: $size-x;
+    height: $size-y;
+}
+
+@mixin font($font-size, $line-height) {
+    font-size: $font-size;
+    line-height: $line-height;
+}

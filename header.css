@@ -1,30 +1,37 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cardo:ital@1&display=swap");
 * {
   margin: 0 0;
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
-  font-weight: 400px;
+  font-weight: 400;
 }
 
 header {
   height: 747px;
   width: 100%;
-  background-image: url("/images/img.png");
-  background-color: #252B49;
+  background-image: url(./images/img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  mix-blend-mode: normal;
+}
+header .header-background {
+  height: 100%;
+  width: 100%;
+  background: #252B49;
   opacity: 80%;
 }
-header .header-container {
+header .header-background .header-container {
   height: 101px;
   align-items: center;
   display: flex;
 }
-header .header-container .header-container-logo {
+header .header-background .header-container .header-container-logo {
   margin-left: 170px;
   width: 270px;
   height: 101px;
 }
-header .header-container .header-container-navigation {
+header .header-background .header-container .header-container-navigation {
   display: flex;
   justify-content: center;
   margin-left: auto;
@@ -32,7 +39,7 @@ header .header-container .header-container-navigation {
   width: 670px;
   height: 101px;
 }
-header .header-container .header-container-navigation h6 {
+header .header-background .header-container .header-container-navigation h6 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,18 +51,18 @@ header .header-container .header-container-navigation h6 {
   line-height: 15px;
   text-transform: uppercase;
 }
-header .header-container .header-container-navigation h6:nth-of-type(1) {
+header .header-background .header-container .header-container-navigation h6:nth-of-type(1) {
   border-bottom: 3px solid #fff;
 }
-header .header-line {
+header .header-background .header-line {
   margin: 0 auto;
   width: 1170px;
   border: 0.5px solid #BABBC5;
 }
-header .header-banner {
+header .header-background .header-banner {
   margin: 0 auto;
 }
-header .header-banner .header-banner__header {
+header .header-background .header-banner .header-banner__header {
   margin: 131px auto 0;
   height: 150px;
   width: 1170px;
@@ -66,7 +73,7 @@ header .header-banner .header-banner__header {
   color: #fff;
   text-transform: uppercase;
 }
-header .header-banner .header-banner__text {
+header .header-background .header-banner .header-banner__text {
   margin: 31.43px auto 0;
   height: 56px;
   width: 1170px;
@@ -76,7 +83,7 @@ header .header-banner .header-banner__text {
   text-align: center;
   color: #fff;
 }
-header .header-banner .header-banner__button {
+header .header-background .header-banner .header-banner__button {
   display: flex;
   margin: 82px auto 0;
   height: 77.58px;

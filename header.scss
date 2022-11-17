@@ -1,106 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&display=swap');
 
 * {
     margin: 0 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-    font-weight: 400px;
+    font-weight: 400;
 
 }
 
 header {
-    height: 747px;
-    width: 100%;
-    background-image: url("/images/img.png");
-    background-color: #252B49;
-    opacity: 80%;
+    @include size($full 747px);
+    background-image: url(./images/img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: normal;
 
-    .header-container {
-        height: 101px;
-        align-items: center;
-        display: flex;
+    .header-background {
+        @include size($full $full);
+        background: #252B49;
+        opacity: 80%;
 
-        .header-container-logo {
-            margin-left: 170px;
-            width: 270px;
+        .header-container {
             height: 101px;
-        }
-
-        .header-container-navigation {
             display: flex;
-            justify-content: center;
-            margin-left: auto;
-            margin-right: 170px;
-            width: 670px;
-            height: 101px;
+            align-items: $flex-center;
 
-            h6 {
+            .header-container-logo {
+                margin-left: 170px;
+                @include size(270px 101px);
+            }
+
+            .header-container-navigation {
                 display: flex;
-                justify-content: center;
-                align-items: center;
-                color: #fff;
-                width: 134px;
-                height: 100%;
-                font-size: 13px;
-                font-weight: 700;
-                line-height: 15px;
+                justify-content: $flex-center;
+                margin-left: auto;
+                margin-right: 170px;
+                @include size(670px 101px);
+
+                h6 {
+                    display: flex;
+                    @include flexable($flex-center $flex-center);
+                    color: $white;
+                    @include size(134px $full);
+                    @include font(13px 15px);
+                    font-weight: 700;
+                    text-transform: uppercase;
+
+                }
+
+                h6:nth-of-type(1) {
+                    border-bottom: 3px solid $white;
+                }
+            }
+
+            .header-burger {
+                display: none;
+            }
+        }
+
+        .header-line {
+            margin: $center;
+            width: 1170px;
+            @include bordered(0.5px, #BABBC5);
+        }
+
+        .header-banner {
+            margin: $center;
+
+            .header-banner__header {
+                margin: 131px auto 0;
+                @include size(1170px 150px);
+                @include font(64px 75px);
+                font-weight: 900;
+                text-align: $flex-center;
+                color: $white;
                 text-transform: uppercase;
+            }
+
+            .header-banner__text {
+                margin: 31.43px auto 0;
+                @include size(1170px 56px);
+                @include font(24px 28px);
+                text-align: $flex-center;
+                color: $white;
 
             }
 
-            h6:nth-of-type(1) {
-                border-bottom: 3px solid #fff;
+            .header-banner__button {
+                display: flex;
+                @include flexable($flex-center $flex-center);
+                margin: 82px auto 0;
+                @include size(369px 77.58px);
+                background: #FF4343;
+                @include font(24px 28px);
+                font-weight: 900;
+                text-transform: uppercase;
+                color: $white;
             }
-        }
-    }
-
-    .header-line {
-        margin: 0 auto;
-        width: 1170px;
-        border: 0.5px solid #BABBC5;
-    }
-
-    .header-banner {
-        margin: 0 auto;
-
-        .header-banner__header {
-            margin: 131px auto 0;
-            height: 150px;
-            width: 1170px;
-            font-size: 64px;
-            font-weight: 900;
-            line-height: 75px;
-            text-align: center;
-            color: #fff;
-            text-transform: uppercase;
-        }
-
-        .header-banner__text {
-            margin: 31.43px auto 0;
-            height: 56px;
-            width: 1170px;
-            font-size: 24px;
-            font-weight: 400;
-            line-height: 28px;
-            text-align: center;
-            color: #fff;
-
-        }
-
-        .header-banner__button {
-            display: flex;
-            margin: 82px auto 0;
-            height: 77.58px;
-            width: 369px;
-            background: #FF4343;
-            font-size: 24px;
-            font-weight: 900;
-            line-height: 28px;
-            justify-content: center;
-            align-items: center;
-            text-transform: uppercase;
-            color: #fff;
         }
     }
 }

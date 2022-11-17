@@ -1,1 +1,71 @@
-/*# sourceMappingURL=testimonials.css.map */
+.testmonials-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 114px;
+}
+.testmonials-container .testmonials-subcontainer {
+  width: 1511px;
+  height: 535px;
+  margin: 0 auto;
+}
+.testmonials-container .testmonials-subcontainer .testmonials-carousel {
+  display: flex;
+}
+.testmonials-container .testmonials-subcontainer .testmonials-carousel .testmonials-carousel__photo {
+  background-image: url(./images/bg.png);
+  width: 741px;
+  height: 490px;
+}
+.testmonials-container .testmonials-subcontainer .testmonials-carousel .testmonials-carousel__signature {
+  background: #5C3249;
+  width: 770px;
+  height: 490px;
+}
+.testmonials-container .testmonials-subcontainer .testmonials-carousel .testmonials-carousel__signature .signature__header {
+  font-family: "Cardo";
+  font-style: italic;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  font-size: 36px;
+  line-height: 49px;
+  color: #FFFFFF;
+  width: 471px;
+  height: 230px;
+  margin: 116px 0 0 130px;
+}
+.testmonials-container .testmonials-subcontainer .testmonials-carousel .testmonials-carousel__signature .signature__text {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  width: 470px;
+  height: 28px;
+  margin-left: 130px;
+}
+.testmonials-container .testmonials-subcontainer .testmonials-dots {
+  display: flex;
+  justify-content: space-between;
+  margin: 31px auto 0;
+  align-items: center;
+  width: 170px;
+}
+.testmonials-container .testmonials-subcontainer .testmonials-dots .testmonials-dots__active {
+  background: #7E5D6F;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #7E5D6F;
+  border-radius: 50%;
+}
+.testmonials-container .testmonials-subcontainer .testmonials-dots .testmonials-dots__normal {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #7E5D6F;
+  border-radius: 50%;
+}/*# sourceMappingURL=testimonials.css.map */

@@ -1,0 +1,101 @@
+.work-container {
+    @include size($full 100vh);
+    display: flex;
+    @include flexable($flex-center $flex-center);
+    margin-top: 133.57px;
+
+    .work-subcontainer {
+        display: grid;
+        @include flexable($flex-center $flex-center);
+        justify-items: center;
+        width: 1170px;
+        margin: $center;
+        grid-template-columns: repeat(4, 378px);
+        grid-template-rows: repeat (2, 340px);
+
+        .work {
+            @include bordered(2px $white);
+            @include size(378px 340px);
+
+            .work-grid-container {
+                @include size($full $full);
+                display: flex;
+                @include flexable($flex-center $flex-center);
+
+                .work-grid-subcontainer {
+
+                    @include size($full 81px);
+
+                    .work__header,
+                    .work__text {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .work1 {
+            background-image: url(images/grid/work_1.png);
+        }
+
+        .work2 {
+            background-image: url(images/grid/work_2.png);
+        }
+
+        .work3 {
+            background-image: url(images/grid/work_3.png);
+        }
+
+        .work4 {
+            background-image: url(images/grid/work_4.png);
+        }
+
+        .work5 {
+            background-image: url(images/grid/work_5.png);
+        }
+
+        .work6 {
+            background-image: url(images/grid/work_6.png);
+        }
+
+        .work7 {
+            background-image: url(images/grid/work_7.png);
+        }
+
+        .work8 {
+            background-image: url(images/grid/work_8.png);
+        }
+
+        .work:hover {
+
+            .work-grid-container {
+
+                background: rgba(255, 67, 67, 0.8);
+
+                .work-grid-subcontainer {
+
+                    .work__header {
+                        font-weight: 900;
+                        @include font(24px 28px);
+                        display: flex;
+                        @include flexable($flex-center $flex-center);
+                        text-align: $flex-center;
+                        text-transform: uppercase;
+                        color: $white;
+                        margin-bottom: 21px;
+                    }
+
+                    .work__text {
+                        @include font(18px 21px);
+                        display: flex;
+                        @include flexable($flex-center $flex-center);
+                        text-align: $flex-center;
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
